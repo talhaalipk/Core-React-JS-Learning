@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Undertanding ReactJs Element In Depth</title>
+		<title>JSX And Babel In React-JS</title>
 
 		<!-- React CDN -->
 		<script
@@ -15,12 +15,12 @@
 			crossorigin
 			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
 		></script>
-		<!-- Our Script Js -->
-		<script src="./script.js" defer></script>
+		<!-- JS Link -->
+		<script src="./script.js" type="text/babel" defer></script>
+		<!-- Babel Compiler-->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"  ></script>
 	</head>
 	<body>
-		<div id="root" style="width: 100%">
-			<!-- Root div -->
-		</div>
+		<div id="root"></div>
 	</body>
 </html>
