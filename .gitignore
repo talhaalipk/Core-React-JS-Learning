@@ -1,2 +1,24 @@
-**/node_modules
-**/.parcel-cache
+# Node.js dependencies (in any level of the project)
+**/node_modules/
+
+# Parcel cache directory (in any level of the project)
+**/.cache/
+
+# Parcel output (build) directory (in any level of the project)
+**/dist/
+**/.parcel-cache/
+
+
+# Logs and error reports (in any level)
+**/*.log
+**/*.gz
+npm-debug.log*
+
+# MacOS specific (optional)
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
+
+# Environment variables (optional)
+**/.env
