@@ -1,0 +1,11 @@
+step 1 --> Create index.html , app.js file
+
+step 2 --> npm init 
+
+step 3 --> npm i react react-dom
+
+step 4 --> app.js file tyoe module
+
+step 5 --> install parcal {npm install --save-dev parcel}
+
+step 6 --> RUN PROJECT npx parcel src/index.html
