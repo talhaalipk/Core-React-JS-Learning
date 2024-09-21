@@ -1,0 +1,26 @@
+#root{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.Quote{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin: 5px;
+}
+
+.Quote h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.Quote span{
+    font-size: 18px;
+    background-color: rgb(218, 205, 33);
+}
