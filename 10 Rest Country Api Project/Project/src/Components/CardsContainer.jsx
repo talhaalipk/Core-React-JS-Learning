@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 // import countryData from "../countryData";
 
-export default function CardsContainer({ serchCountry }) {
+export default function CardsContainer({ serchCountry, filterCountry }) {
 	// countryData State
 	const [countryData, setCountryData] = useState([]);
 
@@ -17,9 +17,20 @@ export default function CardsContainer({ serchCountry }) {
 
 	//Filtered Country
 	const fileredCountryData = countryData.filter((country) => {
-		return country.name.common
+		console.log(country.name.common
 			.toLocaleLowerCase()
-			.includes(serchCountry.toLocaleLowerCase() );
+			.includes(serchCountry.toLocaleLowerCase()))
+		console.log(country.region
+			.toLocaleLowerCase()
+			.includes(filterCountry.toLocaleLowerCase()))
+		return (
+			country.name.common
+				.toLocaleLowerCase()
+				.includes(serchCountry.toLocaleLowerCase()) &&
+			country.region
+				.toLocaleLowerCase()
+				.includes(filterCountry.toLocaleLowerCase())
+		);
 	});
 
 	// console.log(countryData)
