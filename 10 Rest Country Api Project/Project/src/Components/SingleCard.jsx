@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SingleCard({
   keyNo,
   imgUrl,
@@ -9,11 +11,7 @@ export default function SingleCard({
 }) {
   return (
     <>
-      <a
-        key={keyNo}
-        className="country-card"
-        href={`/country.html?name=${countryName}`}
-      >
+      <Link key={keyNo} className="country-card" to={`/country/${countryName}`}>
         <img src={imgUrl} alt={imgAltTag} />
         <div className="card-text">
           <h3 className="card-title">{countryName}</h3>
@@ -31,7 +29,7 @@ export default function SingleCard({
             {capital}
           </p>
         </div>
-      </a>
+      </Link>
     </>
   );
 }

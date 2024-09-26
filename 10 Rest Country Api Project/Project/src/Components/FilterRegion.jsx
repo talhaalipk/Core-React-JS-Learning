@@ -1,18 +1,14 @@
-export default function FilterRegion({setFilterCountry}) {
+export default function FilterRegion({ setFilterCountry }) {
   return (
     <>
       <select
         onChange={(e) => {
-          if(e.target.value == "Filter by Region")
-		  {
-			setFilterCountry("")
-		  }
-		  else
-		  {
-			setFilterCountry(e.target.value)
-		  }
-		  }
-        }
+          if (e.target.value == "Filter by Region") {
+            setFilterCountry("");
+          } else {
+            setFilterCountry(e.target.value);
+          }
+        }}
         className="filter-by-region"
       >
         <option hidden="">Filter by Region</option>
